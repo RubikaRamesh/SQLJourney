@@ -1,0 +1,46 @@
+Below SQL is perform in SQL Server
+
+/* SQL CREATE TABLE Statement */
+ /* CREATE TABLE table_name (
+    column1 datatype,
+    column2 datatype,
+    column3 datatype,
+   ....
+) */
+/* table_name eg:EmployeeTable,OlympicData */
+
+/* SQL INSERT Statement */
+
+ /* INSERT INTO table_name VALUES( 
+     value1,
+     value2,
+     value3,
+     .......
+) */
+
+                /* 
+--		Basic Topics  
+--		1.SELECT statement,TOP,Distinct,Count,As,Max,Min,AVG.
+--		2.WHERE Statement, =,<,>,<>,And,Or,Like,Null,Not Null,In.
+--		3.Order by, Group by
+--		*/
+
+--SELECT * FROM EmployeeDemographics 
+--SELECT DISTINCT(FirstName) FROM EmployeeDemographics
+--SELECT COUNT(EmployeeID) FROM EmployeeDemographics
+--SELECT COUNT(EmployeeId) AS IdCount FROM EmployeeDemographics
+--SELECT MAX(Salary) FROM EmployeeSalary
+--SELECT MIN(Salary) FROM EmployeeSalary
+--SELECT AVG(SALARY) FROM EmployeeSalary
+--SELECT * FROM EmployeeDemographics WHERE FirstName = 'Jim'
+--SELECT * FROM EmployeeDemographics WHERE FirstName <> 'Jim' /* <> sign means not equal to */
+--SELECT * FROM EmployeeSalary WHERE SALARY > 50000
+--SELECT * FROM EmployeeDemographics WHERE AGE <= 32 
+--SELECT * FROM EmployeeDemographics WHERE AGE <= 32 AND Gender = 'Male'
+--SELECT * FROM EmployeeDemographics WHERE AGE <= 32 OR Gender = 'Male'
+--SELECT * FROM EmployeeDemographics WHERE LastName LIKE 'S%'
+--SELECT * FROM EmployeeDemographics WHERE LastName LIKE 'S%o%'
+--SELECT * FROM EmployeeDemographics WHERE FirstName IS NULL
+--SELECT * FROM EmployeeDemographics WHERE FirstName IS NOT NULL
+--SELECT * FROM EmployeeDemographics WHERE FirstName IN ('Jim','Michael')
+--SELECT  From EmployeeDemographics GROUP BY Employee
